@@ -1,6 +1,44 @@
 .button {
-  padding: 1rem 2rem;
+  display: inline-block;
+  padding: 2.65rem 4rem;
   color: var(--color-white);
-  background-color: blue;
-  border-radius: 2rem;
+  font-weight: 600;
+  font-family: var(--second-ff);
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #94C22B;
+  border-radius: 1rem;
+  transition: background-color var(--transition), color var(--transition);
+
+  &:hover {
+    background-color: #A4D434;
+  }
+
+  &:active {
+    background-color: #88B81A;
+  }
+
+  @include mq(sm) {
+    padding: 2.25rem;
+  }
+
+  @include mq(xs) {
+    width: 100%;
+    text-align: center;
+  }
+
+  &--white {
+    color: #000;
+    background-color: #fff;
+
+    &:hover {
+      color: #94C22B;
+      background-color: #fff;
+    }
+
+    &:active {
+      background-color: #88B81A;
+    }
+  }
 }

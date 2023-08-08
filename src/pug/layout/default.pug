@@ -4,9 +4,10 @@ include ../mixins/**/*.pug
 block variables
 
 doctype html
-html(lang=siteLang)
+html(lang=siteLang data-lang="ru")
   head
     include ../parts/head.pug
+    include ../parts/menu.pug
   body(class=bodyClass)
     .page-wrapper
       block header

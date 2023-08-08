@@ -1,7 +1,39 @@
-.modal__container(data-target="modal")
+.modal__container(data-target="modal-request")
   .modal__content
     button.button-reset.modal__close-btn.modal-close(type="button")
       span
       span
     .modal__legend
-      | Поздравляем вы открыли модалку!
+      | Заголовок формы
+    form.form(action="/local/action/modal-review.php" data-need-validation data-sucess="modal-sucess" data-error="modal-error" )
+      .input.js-validation-wrapper
+        input.input__element(tyle="text" placeholder="Ваше имя" required)
+        .input__placeholder Ваше имя
+      .input.js-validation-wrapper
+        input.input__element.js-phone-mask(tyle="text" placeholder="Телефон" required)
+        .input__placeholder Телефон
+      .form__row
+        button.button.form__row-btn Перезвонить мне
+        .form__row-text Нажимая кнопку «Перезвонить мне», вы подтверждаете, что согласны на обработку #[a(href="/") персональных данных]
+
+.modal__container.modal__container--sucess(data-target="modal-sucess")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__legend
+      | Данные отправлены
+    .modal__desc
+      | Ваши данные успешно отправлены. Мы свяжемся с вами в самое ближайшее время.
+    button.button Хорошо
+
+.modal__container.modal__container--error(data-target="modal-error")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__legend
+      | Ошибка
+    .modal__desc
+      | Ваши данные не были отправлены. Попробуйте сделать это снова или повторите позже.
+    button.button Повторить

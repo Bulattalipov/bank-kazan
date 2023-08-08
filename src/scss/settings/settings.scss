@@ -10,6 +10,26 @@
 html {
   font-size: 10px;
   line-height: 1.2;
+
+  @include mq(custom, max, 1536) {
+    font-size: 9px;
+  }
+
+  @include mq(custom, max, 1440) {
+    font-size: 8px;
+  }
+
+  @include mq(sm) {
+    font-size: 10px;
+  }
+
+  @include mq(custom, max, 350) {
+    font-size: 9px;
+  }
+
+  @include mq(custom, max, 310) {
+    font-size: 8px;
+  }
 }
 
 body {
@@ -26,7 +46,7 @@ ol {
 ol {
   counter-reset: ordered-list;
 
-  & > li {
+  &>li {
     counter-increment: ordered-list;
 
     &::before {
@@ -156,9 +176,9 @@ img {
 
 .site-container {
   width: 100%;
-  max-width: 1470px;
+  max-width: 1488px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 var(--padding-offset);
 }
 
 .page-wrapper {
@@ -200,4 +220,36 @@ a:focus {
 .js-focus-visible button:focus:not(.focus-visible),
 .js-focus-visible a:focus:not(.focus-visible) {
   outline: none;
+}
+
+
+
+.logo {
+  display: inline-block;
+
+  &__img {
+    width: 20.4rem;
+    height: 4rem;
+    object-fit: contain;
+
+    @include mq(xs) {
+      max-width: 100%;
+      height: 2.4rem;
+      width: 100%;
+    }
+  }
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+
+  @include mq(sm) {
+    font-size: 3rem;
+  }
+
+  @include mq(xs) {
+    font-size: 2.4rem;
+  }
 }

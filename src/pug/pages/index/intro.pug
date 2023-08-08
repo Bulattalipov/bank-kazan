@@ -1,3 +1,19 @@
 section.intro
+  picture.intro__img
+    source(srcset="assets/images/intro/bg-img-mini.png" media="(max-width: 768px)" alt="")
+    img(src="assets/images/intro/bg-img.png" alt="")
   .site-container
-    +picture('test/test-image.jpg', 'test')
+    .intro__inner
+      h1.intro__title Банковская гарантия за 4&nbsp;часа
+      p.intro__desc 44/223-ФЗ, ПП-615 на обеспечение заявок на участие в тендере и на обеспечение обязательств по государственному контракту
+      a.intro__btn.button(href="/") Оформить гарантию
+      ul.intro__items
+        li.intro__item
+          .intro__item-price До 20 млн. ₽
+          .intro__item-text без залога
+        li.intro__item
+          .intro__item-price До 20 млн. ₽
+          .intro__item-text без залога
+        li.intro__item
+          .intro__item-price До 20 млн. ₽
+          .intro__item-text без залога

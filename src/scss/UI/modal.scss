@@ -22,12 +22,37 @@
     left: 50%;
     display: none;
     width: 100%;
-    max-width: 50rem;
+    max-width: 60rem;
     height: auto;
     background-color: var(--color-white);
-    border-radius: 1.6rem;
+    border-radius: 3.2rem;
     box-shadow: 0 0 1rem rgba($color: #000, $alpha: 10%);
     transform: translate(-50%, -50%);
+
+    @include mq(sm) {
+      top: auto;
+      bottom: 1rem;
+      width: 98%;
+      max-width: 100%;
+      transform: translateX(-50%);
+    }
+
+    &--sucess,
+    &--error {
+      .modal__legend {
+        margin-bottom: 2.4rem;
+
+        @include mq(sm) {
+          margin-bottom: 0.8rem;
+        }
+      }
+    }
+
+    &--error {
+      .modal__legend {
+        color: #F32727;
+      }
+    }
 
     &.modal-open {
       display: block;
@@ -36,21 +61,30 @@
 
   &__content {
     position: relative;
-    padding: 3.4rem 4rem;
+    padding: 5.6rem;
+
+    @include mq(sm) {
+      padding: 3.2rem 2rem;
+    }
   }
 
   &__close-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 3.2rem;
+    right: 3.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 5.4rem;
-    height: 5.4rem;
+    width: 3.2rem;
+    height: 3.2rem;
     background-color: transparent;
     border-radius: 50%;
     cursor: pointer;
+
+    @include mq(sm) {
+      top: 2rem;
+      right: 2.8rem;
+    }
 
     &:hover {
       /** span {
@@ -70,7 +104,7 @@
       top: 50%;
       left: 50%;
       display: block;
-      width: 1.3rem;
+      width: 2rem;
       height: 0.1rem;
       background-color: black;
       transform: translate(-50%, -50%);
@@ -87,6 +121,31 @@
   }
 
   &__legend {
-    text-align: center;
+    margin-bottom: 4rem;
+    color: #000;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 1.2;
+
+    @include mq(sm) {
+      margin-bottom: 3.6rem;
+      font-size: 2rem;
+    }
+  }
+
+  .form__row {
+    margin-top: 2.4rem;
+  }
+
+  &__desc {
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    opacity: 0.75;
+
+    @include mq(sm) {
+      margin-bottom: 3.2rem;
+      font-size: 1.2rem;
+    }
   }
 }

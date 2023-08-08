@@ -1,6 +1,28 @@
 header.header
   .site-container
-    a(href="/")
-      img(src="assets/images/logo.svg" alt="Logo")
-    button.button(data-path="modal")
-      | Открыть модалку
+    .header__inner
+      a.logo(href="/")
+        img.logo__img(src="assets/images/logo.svg" alt="Logo")
+      nav.nav.header__nav
+        ul.nav__list
+          li.nav__item
+            a.nav__item-link(href="/")
+              | Виды гарантий
+          li.nav__item
+            a.nav__item-link(href="/")
+              | Как подать заявку
+          li.nav__item
+            a.nav__item-link(href="/")
+              | Вопросы и ответы
+      .header__box
+        a.header__telephone(href="tel:88007751877")
+          +icon-mono("phone")(class="header__telephone-icon" width="14px" height="15px")
+          .header__telephone-number 8-800-77-518-77
+        button.header__cabinet-btn.button(data-path="modal-sucess") личный кабинет
+      .header__mobile
+        .header__mobile-burger
+          span
+          span
+          span
+        button.header__mobile-cabinet(data-path="modal-sucess")
+          +icon-mono("cabinet")(width="32px" height="32px")

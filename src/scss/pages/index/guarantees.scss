@@ -1,0 +1,153 @@
+.guarantees {
+  padding-top: 12rem;
+
+  @include mq(md) {
+    padding-top: 9rem;
+  }
+
+  @include mq(xs) {
+    padding-top: 4.8rem;
+  }
+
+  &__wrapper {}
+
+  &__title {
+    margin-bottom: 4rem;
+
+    @include mq(sm) {
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+
+    @include mq(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq(xs) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0;
+    }
+  }
+
+  &__list-item {
+    padding: 3rem;
+    background-color: #FAFAFA;
+    border-radius: 2rem;
+
+    @include mq(sm) {
+      padding: 2rem;
+    }
+
+    @include mq(xs) {
+      display: flex;
+      margin-bottom: 0.2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.hide {
+      display: none;
+    }
+
+  }
+
+  &__list-item-icon {
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-bottom: 3.2rem;
+
+    @include mq(sm) {
+      width: 4.4rem;
+      height: 4.4rem;
+      margin-bottom: 2rem;
+    }
+
+    @include mq(xs) {
+      margin-right: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__list-item-title {
+    margin-bottom: 0.8rem;
+    color: #000;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 120%;
+
+    @include mq(sm) {
+      margin-bottom: 1.2rem;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__list-item-desc {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    opacity: 0.5;
+
+    @include mq(sm) {
+      font-size: 1.4rem;
+    }
+
+    @include mq(xs) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    padding: 2.35rem;
+    background: #FAFAFA;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+      margin-left: 1.2rem;
+    }
+
+    @include mq(sm) {
+      padding: 2.1rem;
+    }
+
+    @include mq(xs) {
+      margin-top: 0.8rem;
+      font-size: 1.2rem;
+    }
+
+    span {
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+    &.active {
+      span {
+        &:nth-child(1) {
+          display: none;
+        }
+
+        &:nth-child(2) {
+          display: flex;
+        }
+      }
+
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

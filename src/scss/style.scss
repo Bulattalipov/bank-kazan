@@ -1,23 +1,35 @@
 /* stylelint-disable no-invalid-position-at-import-rule */
 :root {
+  --fs-html: 0.595238095vw;
+
   /* typography  */
-  --main-ff: "Roboto", sans-serif;
-  --second-ff: "Roboto", sans-serif;
+  --main-ff: "Inter", sans-serif;
+  --second-ff: "OpenSans", sans-serif;
 
   /* colors */
-  --color-dark: #333;
-  --color-bg: #fafcfe;
+  --color-dark: #000;
+  --color-bg: #fff;
   --color-white: #fff;
   --color-grey-600: #99a5b0;
   --color-grey-300: #eff1f5;
   --font-body: 400 1.6rem/1.2 var(--main-ff);
 
   /* etc */
+  --padding-offset: 50px;
   --transition: 200ms ease-in;
 }
 
+@import "./blocks/**/*";
 @import "./helpers/**/*";
 @import "./vendor/**/*";
 @import "./settings/**/*";
 @import "./UI/**/*";
 @import "./pages/**/*";
+@import "./parts/**/*";
+
+@include mq(lg) {
+  :root {
+    /* etc */
+    --padding-offset: 20px;
+  }
+}

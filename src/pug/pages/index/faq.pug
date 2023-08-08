@@ -1,0 +1,31 @@
+-
+  faqList = [
+    "В чем отличие ВАТС от обычной телефонии?",
+    "Как быстро подключается услуга?",
+  ]
+
+section.faq
+  .site-container
+    ul.faq__list.js-accordions
+      each item in faqList
+        li.faq__list-item.js-accordion
+          .faq__list-item-title-wrapper.js-accordion-btn
+            .faq__list-item-title= item
+            .faq__list-item-cross
+          .faq__list-item-content-wrapper.js-accordion-content
+            ul.faq__list-item-content
+              li.faq__list-item-content-elem
+                .faq__list-item-content-elem-title
+                  | Кто может направить заявку на получение электронной банковской гарантии?
+                .faq__list-item-content-elem-desc
+                  | Данным продуктом может воспользоваться Юридическое лицо, имеющее организационно-правовую форму – Акционерное общество и Общество с ограниченной ответственностью.
+              li.faq__list-item-content-elem
+                .faq__list-item-content-elem-title
+                  | Является ли обязательным условием открытие расчетного счета для получения электронной банковской гарантии?
+                .faq__list-item-content-elem-desc
+                  | Нет, открытие расчетного счета не требуется.
+              li.faq__list-item-content-elem
+                .faq__list-item-content-elem-title
+                  | Требуется ли предоставление поручительств, залогов для оформления электронной банковской гарантии?
+                .faq__list-item-content-elem-desc
+                  | Нет, дополнительное обеспечение по сделке не требуется.

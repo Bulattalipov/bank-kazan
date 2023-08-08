@@ -1,0 +1,17 @@
+section.help
+  .site-container
+    .help__wrapper
+      img.help__img(src="assets/images/help/people.png" alt="")
+      .help__box
+        h2.help__box-title.title Мы рады вам помочь
+        p.help__box-desc Наши специалисты помогут вам решить любой вопрос. Просто оставьте заявку.
+        form.form(action="/local/action/modal-review.php" data-need-validation data-sucess="modal-succes" data-error="modal-error")
+          .input.js-validation-wrapper
+            input.input__element(tyle="text" placeholder="Ваше имя" required)
+            .input__placeholder Ваше имя
+          .input.js-validation-wrapper
+            input.input__element.js-phone-mask(tyle="text" placeholder="Телефон" required)
+            .input__placeholder Телефон
+          .form__row
+            button.button.form__row-btn Перезвонить мне
+            .form__row-text Нажимая кнопку «Перезвонить мне», вы подтверждаете, что согласны на обработку #[a(href="/") персональных данных]

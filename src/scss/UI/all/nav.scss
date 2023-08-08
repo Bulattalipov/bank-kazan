@@ -1,0 +1,40 @@
+.nav {
+
+  &__list {
+    display: flex;
+
+    @include mq(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    margin-right: 3.6rem;
+
+    &:last-child {
+      margin-right: 0;
+
+      @include mq(lg) {
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+      }
+    }
+
+    @include mq(lg) {
+      margin-right: 0;
+      border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &__item-link {
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+    @include mq(lg) {
+      display: block;
+      padding: 2.4rem 0;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}

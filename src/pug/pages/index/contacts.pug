@@ -1,0 +1,19 @@
+section.contacts
+  .site-container
+    .contacts__wrapper
+      .contacts__box
+        .contacts__box-title.title Мы рады вам помочь
+        .contacts__box-desc Наши специалисты помогут вам решить любой вопрос. Просто позвоните нам.
+      .contacts__items
+        .contacts__item
+          .contacts__item-content
+            a.contacts__item-email(href="mailto:zayavka@bankkazani.ru")
+              | zayavka@bankkazani.ru
+            .contacts__item-text Есть вопросы? Напишите нам
+          +icon-multi("mail-icon")(class="contacts__item-icon" width="56px" height="56px")
+        .contacts__item
+          .contacts__item-content
+            a.contacts__item-phone(href="tel:88007751877")
+              | 8 (800) 775 18 77
+            .contacts__item-text Есть вопросы? Напишите нам
+          +icon-multi("phone-icon")(class="contacts__item-icon" width="56px" height="56px")

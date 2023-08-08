@@ -1,0 +1,83 @@
+.main-menu {
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  padding-bottom: 2rem;
+  z-index: -1;
+  background-color: #94C22B;
+  transition: opacity var(--transition), z-index var(--transition);
+
+  &.active {
+    opacity: 1;
+    z-index: 5;
+  }
+
+  .site-container {
+    height: 100%;
+  }
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__close {
+    position: absolute;
+    top: 2.7rem;
+    right: 2.3rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      left: 50%;
+      width: 100%;
+      height: 0.2rem;
+      background-color: #fff;
+      transform: translateX(-50%);
+      transition: all 0.5s;
+
+      &:nth-of-type(1) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+      }
+
+      &:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+      }
+    }
+  }
+
+  &__container {
+    padding-top: 7.2rem;
+  }
+
+  &__nav {
+    margin-bottom: 2rem;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+
+    button {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  &__box-telephone {
+    display: block;
+    padding: 2rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: var(--second-ff);
+    text-align: center;
+  }
+}
