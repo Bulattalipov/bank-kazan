@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Описание сайта">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Главная | Название сайта</title>
+    <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.0.0">
+    <div class="main-menu">
+      <div class="site-container">
+        <div class="main-menu__close"><span></span><span></span>
+        </div>
+        <div class="main-menu__container">
+          <nav class="nav main-menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__item-link" href="/">Виды гарантий</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="/">Как подать заявку</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-link" href="/">Вопросы и ответы</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="main-menu__box">
+            <button class="button button--white">Оформить гарантию</button>
+            <a class="button" href="/">Личный кабинет</a>
+            <a class="main-menu__box-telephone" href="tel:88007751877">8-800-77-518-77</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body class="page-home">
+    <div class="page-wrapper">
+
+      <header class="header">
+        <div class="site-container">
+          <div class="header__inner">
+            <a class="logo" href="/">
+              <img class="logo__img" src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__item-link" href="/">Виды гарантий</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link" href="/">Как подать заявку</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__item-link" href="/">Вопросы и ответы</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__box">
+              <a class="header__telephone" href="tel:88007751877">
+                <svg class="icon icon-phone header__telephone-icon" width="14px" height="15px">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#phone"></use>
+                </svg>
+                <div class="header__telephone-number">8-800-77-518-77</div>
+              </a>
+              <button class="header__cabinet-btn button" data-path="modal-sucess">личный кабинет</button>
+            </div>
+            <div class="header__mobile">
+              <div class="header__mobile-burger"><span></span><span></span><span></span>
+              </div>
+              <button class="header__mobile-cabinet" data-path="modal-sucess">
+                <svg class="icon icon-cabinet" width="32px" height="32px">
+                  <use xlink:href="assets/images/sprites/sprite-mono.svg#cabinet"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-main main">
+        <section class="intro">
+          <picture class="intro__img">
+            <source srcset="assets/images/intro/bg-img-mini.png" media="(max-width: 768px)" alt="">
+            <img src="assets/images/intro/bg-img.png" alt="">
+          </picture>
+          <div class="site-container">
+            <div class="intro__inner">
+              <h1 class="intro__title">Банковская гарантия за 4&nbsp;часа</h1>
+              <p class="intro__desc">44/223-ФЗ, ПП-615 на обеспечение заявок на участие в тендере и на обеспечение обязательств по государственному контракту</p>
+              <a class="intro__btn button" href="/">Оформить гарантию</a>
+              <ul class="intro__items">
+                <li class="intro__item">
+                  <div class="intro__item-price">До 20 млн. ₽</div>
+                  <div class="intro__item-text">без залога</div>
+                </li>
+                <li class="intro__item">
+                  <div class="intro__item-price">До 20 млн. ₽</div>
+                  <div class="intro__item-text">без залога</div>
+                </li>
+                <li class="intro__item">
+                  <div class="intro__item-price">До 20 млн. ₽</div>
+                  <div class="intro__item-text">без залога</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="guarantees">
+          <div class="site-container">
+            <div class="guarantees__wrapper"></div>
+            <h2 class="guarantees__title title">Все виды банковских гарантий</h2>
+            <ul class="guarantees__list" data-quantity="4">
+              <li class="guarantees__list-item">
+                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-1.svg" alt="">
+                <div class="guarantees__list-item-box">
+                  <h3 class="guarantees__list-item-title">Гарантия для участия в тендере</h3>
+                  <p class="guarantees__list-item-desc">Обеспечивает обязательства участника тендера, конкурса или аукциона</p>
+                </div>
+              </li>
+              <li class="guarantees__list-item">
+                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-2.svg" alt="">
+                <div class="guarantees__list-item-box">
+                  <h3 class="guarantees__list-item-title">Гарантия исполнения обязательств по договору</h3>
+                  <p class="guarantees__list-item-desc">Обеспечивает исполнение обязательств по заключаемому договору</p>
+                </div>
+              </li>
+              <li class="guarantees__list-item">
+                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-3.svg" alt="">
+                <div class="guarantees__list-item-box">
+                  <h3 class="guarantees__list-item-title">Гарантия возврата авансового платежа</h3>
+                  <p class="guarantees__list-item-desc">Обеспечивает исполнение обязательств по возврату аванса по договору</p>
+                </div>
+              </li>
+              <li class="guarantees__list-item">
+                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
+                <div class="guarantees__list-item-box">
+                  <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
+                  <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
+                </div>
+              </li>
+              <li class="guarantees__list-item">
+                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
+                <div class="guarantees__list-item-box">
+                  <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
+                  <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
+                </div>
+              </li>
+              <li class="guarantees__list-item">
+                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-3.svg" alt="">
+                <div class="guarantees__list-item-box">
+                  <h3 class="guarantees__list-item-title">Гарантия возврата авансового платежа</h3>
+                  <p class="guarantees__list-item-desc">Обеспечивает исполнение обязательств по возврату аванса по договору</p>
+                </div>
+              </li>
+              <li class="guarantees__list-item">
+                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
+                <div class="guarantees__list-item-box">
+                  <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
+                  <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
+                </div>
+              </li>
+              <li class="guarantees__list-item">
+                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
+                <div class="guarantees__list-item-box">
+                  <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
+                  <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
+                </div>
+              </li>
+            </ul>
+            <div class="guarantees__btn"><span>показать еще</span><span>скрыть</span>
+              <svg class="icon icon-arrow-down" width="20px" height="20px">
+                <use xlink:href="assets/images/sprites/sprite-multi.svg#arrow-down"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section class="decor">
+          <div class="site-container">
+            <h2 class="decor__title title">Удобное оформление</h2>
+            <div class="decor__swiper-wrapper">
+              <div class="decor__swiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <img class="decor__item-icon" src="assets/images/decor/icon-1.svg" alt="">
+                    <div class="decor__item-box">
+                      <h3 class="decor__item-title">Без визита в банк</h3>
+                      <p class="decor__item-desc">Все оформляется через наш сервис</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <img class="decor__item-icon" src="assets/images/decor/icon-2.svg" alt="">
+                    <div class="decor__item-box">
+                      <h3 class="decor__item-title">Без залога и поручительства</h3>
+                      <p class="decor__item-desc">Не требуется предоставление поручительств и залогов</p>
+                    </div>
+                  </li>
+                  <li class="swiper-slide">
+                    <img class="decor__item-icon" src="assets/images/decor/icon-3.svg" alt="">
+                    <div class="decor__item-box">
+                      <h3 class="decor__item-title">Без открытия расчетного счета</h3>
+                      <p class="decor__item-desc">Ответ от банков-партнеров — в течение 30 минут</p>
+                    </div>
+                  </li>
+                </ul>
+                <div class="decor__swiper-navigation">
+                  <div class="decor__swiper-navigation-prev">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="40" height="40" rx="20" fill="#FAFAFA" />
+                      <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black" />
+                    </svg>
+                  </div>
+                  <div class="decor__swiper-navigation-next">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="40" height="40" rx="20" fill="#FAFAFA" />
+                      <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="stages">
+          <div class="site-container">
+            <h2 class="stages__title title">Как подать заявку на банковскую гарантию</h2>
+            <ul class="stages__list">
+              <li class="stages__list-item" style="--r:180deg;">
+                <div class="stage">
+                  <div class="stage__num">
+                    <div class="stage__num-circle"></div>
+                  </div>
+                  <div class="stage__text">Чтобы оформить заявку<a href="#">войдите</a>\<a href="#">зарегистрируйтесь</a>в нашем сервисе</div>
+                </div>
+              </li>
+              <li class="stages__list-item" style="--r:270deg;">
+                <div class="stage">
+                  <div class="stage__num">
+                    <div class="stage__num-circle"></div>
+                  </div>
+                  <div class="stage__text">Создайте заявку в личном кабинете</div>
+                </div>
+              </li>
+              <li class="stages__list-item" style="--r:360deg;">
+                <div class="stage">
+                  <div class="stage__num">
+                    <div class="stage__num-circle"></div>
+                  </div>
+                  <div class="stage__text">Отслеживайте статус заявки в личном кабинете.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="review">
+          <div class="site-container">
+            <div class="review__wrapper">
+              <div class="review__banner">
+                <img class="review__banner-img" src="assets/images/contacts/bg-img.svg">
+                <div class="review__banner-title">Оформите гарантию в удобном личном кабинете</div>
+                <div class="review__banner-desc">Зарегистрируйтесь для того чтобы оформить гарантию</div>
+                <button class="review__banner-btn button button--white">Оформить гарантию</button>
+              </div>
+              <div class="review__video">
+                <video autoplay muted loop>
+                  <source src="https://s3-figma-videos-production-sig.figma.com/video/733935681537057707/TEAM/24d2/d793/-a873-406b-94e9-568a7d28b1e0?Expires=1692576000&amp;Signature=QJf5bqnTwaTwI37-ywCaXPfZhLK8jxcVsGuqIaBVKrnFzOHqGnYr7~F4rmzet4wzJ~Xo~Ks7H4-iUv1edBmryGxRSQ9tfj3dfaVc~-HEhV-~SkZ8AS3BXX~udeZeJnqGWR11ixTRx~vT1rXl4n5Fhpd5NAQ0Bu~cgd0osOXJW2Q7E371d53a1OLw7xJBNPmUFAxwlX63MxyW4WZAWViEBaxQDth19PyL9N-TeRcFYgPcJdR9ycYdBq0gfTBvCKaPFIDiXOaufrPel~pcLnw9vrqmxg7nbMyuy~Lv7cRF9q9VBNNHkzILyymyc4dy1UyYU8L~ohglUe8MOQJj0kqtyw__&amp;Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" type="video/mp4">
+                </video>
+                <div class="review__video-inner">
+                  <div class="review__video-title">Посмотрите видео-инструкцию по оформления заявки</div>
+                  <div class="review__video-time">3:48</div>
+                  <a class="review__video-play" href="/">
+                    <svg class="review__video-play-icon" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                      <rect width="120" height="120" rx="60" fill="white" />
+                      <path d="M75.9148 58.7584C77.2705 59.5237 77.2705 61.4763 75.9148 62.2416L50.9832 76.3159C49.6499 77.0686 48 76.1053 48 74.5743L48 46.4257C48 44.8947 49.65 43.9314 50.9832 44.6841L75.9148 58.7584Z" fill="black" fill-opacity="0.5" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="site-container">
+            <div class="contacts__wrapper">
+              <div class="contacts__box">
+                <div class="contacts__box-title title">Мы рады вам помочь</div>
+                <div class="contacts__box-desc">Наши специалисты помогут вам решить любой вопрос. Просто позвоните нам.</div>
+              </div>
+              <div class="contacts__items">
+                <div class="contacts__item">
+                  <div class="contacts__item-content">
+                    <a class="contacts__item-email" href="mailto:zayavka@bankkazani.ru">zayavka@bankkazani.ru</a>
+                    <div class="contacts__item-text">Есть вопросы? Напишите нам</div>
+                  </div>
+                  <svg class="icon icon-mail-icon contacts__item-icon" width="56px" height="56px">
+                    <use xlink:href="assets/images/sprites/sprite-multi.svg#mail-icon"></use>
+                  </svg>
+                </div>
+                <div class="contacts__item">
+                  <div class="contacts__item-content">
+                    <a class="contacts__item-phone" href="tel:88007751877">8 (800) 775 18 77</a>
+                    <div class="contacts__item-text">Есть вопросы? Напишите нам</div>
+                  </div>
+                  <svg class="icon icon-phone-icon contacts__item-icon" width="56px" height="56px">
+                    <use xlink:href="assets/images/sprites/sprite-multi.svg#phone-icon"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <div class="site-container">
+            <ul class="faq__list js-accordions">
+              <li class="faq__list-item js-accordion">
+                <div class="faq__list-item-title-wrapper js-accordion-btn">
+                  <div class="faq__list-item-title">В чем отличие ВАТС от обычной телефонии?</div>
+                  <div class="faq__list-item-cross"></div>
+                </div>
+                <div class="faq__list-item-content-wrapper js-accordion-content">
+                  <ul class="faq__list-item-content">
+                    <li class="faq__list-item-content-elem">
+                      <div class="faq__list-item-content-elem-title">Кто может направить заявку на получение электронной банковской гарантии?</div>
+                      <div class="faq__list-item-content-elem-desc">Данным продуктом может воспользоваться Юридическое лицо, имеющее организационно-правовую форму – Акционерное общество и Общество с ограниченной ответственностью.</div>
+                    </li>
+                    <li class="faq__list-item-content-elem">
+                      <div class="faq__list-item-content-elem-title">Является ли обязательным условием открытие расчетного счета для получения электронной банковской гарантии?</div>
+                      <div class="faq__list-item-content-elem-desc">Нет, открытие расчетного счета не требуется.</div>
+                    </li>
+                    <li class="faq__list-item-content-elem">
+                      <div class="faq__list-item-content-elem-title">Требуется ли предоставление поручительств, залогов для оформления электронной банковской гарантии?</div>
+                      <div class="faq__list-item-content-elem-desc">Нет, дополнительное обеспечение по сделке не требуется.</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="faq__list-item js-accordion">
+                <div class="faq__list-item-title-wrapper js-accordion-btn">
+                  <div class="faq__list-item-title">Как быстро подключается услуга?</div>
+                  <div class="faq__list-item-cross"></div>
+                </div>
+                <div class="faq__list-item-content-wrapper js-accordion-content">
+                  <ul class="faq__list-item-content">
+                    <li class="faq__list-item-content-elem">
+                      <div class="faq__list-item-content-elem-title">Кто может направить заявку на получение электронной банковской гарантии?</div>
+                      <div class="faq__list-item-content-elem-desc">Данным продуктом может воспользоваться Юридическое лицо, имеющее организационно-правовую форму – Акционерное общество и Общество с ограниченной ответственностью.</div>
+                    </li>
+                    <li class="faq__list-item-content-elem">
+                      <div class="faq__list-item-content-elem-title">Является ли обязательным условием открытие расчетного счета для получения электронной банковской гарантии?</div>
+                      <div class="faq__list-item-content-elem-desc">Нет, открытие расчетного счета не требуется.</div>
+                    </li>
+                    <li class="faq__list-item-content-elem">
+                      <div class="faq__list-item-content-elem-title">Требуется ли предоставление поручительств, залогов для оформления электронной банковской гарантии?</div>
+                      <div class="faq__list-item-content-elem-desc">Нет, дополнительное обеспечение по сделке не требуется.</div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="help">
+          <div class="site-container">
+            <div class="help__wrapper">
+              <img class="help__img" src="assets/images/help/people.png" alt="">
+              <div class="help__box">
+                <h2 class="help__box-title title">Мы рады вам помочь</h2>
+                <p class="help__box-desc">Наши специалисты помогут вам решить любой вопрос. Просто оставьте заявку.</p>
+                <form class="form" action="/local/action/modal-review.php" data-need-validation data-sucess="modal-succes" data-error="modal-error">
+                  <div class="input js-validation-wrapper">
+                    <input class="input__element" tyle="text" placeholder="Ваше имя" required>
+                    <div class="input__placeholder">Ваше имя</div>
+                  </div>
+                  <div class="input js-validation-wrapper">
+                    <input class="input__element js-phone-mask" tyle="text" placeholder="Телефон" required>
+                    <div class="input__placeholder">Телефон</div>
+                  </div>
+                  <div class="form__row">
+                    <button class="button form__row-btn">Перезвонить мне</button>
+                    <div class="form__row-text">Нажимая кнопку «Перезвонить мне», вы подтверждаете, что согласны на обработку<a href="/">персональных данных</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="site-container">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="logo" href="/">
+                <img class="logo__img" src="assets/images/logo.svg" alt="Logo">
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <div class="footer__list-item-title">Бесплатный звонок по России</div>
+              <a class="footer__list-item-phone" href="tel:88007751877">8 (800) 775 18 77</a>
+            </li>
+            <li class="footer__list-item">
+              <div class="footer__list-item-title">Почта</div>
+              <a class="footer__list-item-email" href="mailto:zayavka@bankkazani.ru">zayavka@bankkazani.ru</a>
+            </li>
+            <li class="footer__list-item">
+              <div class="footer__list-item-title">Официальный сайт банка</div>
+              <a class="footer__list-item-email" href="mailto:www.bankofkazan.ru">www.bankofkazan.ru</a>
+            </li>
+          </ul>
+          <div class="footer__box">
+            <div class="footer__box-copy">© Банк Казани, 2023<a href="/">Лицензия № 708</a>от 27.05.2016г, ООО КБЭР “Банк Казани”</div>
+            <div class="footer__box-creator"><span>Создание сайта</span>
+              <a href="#">
+                <img src="assets/images/footer/MarkWeber.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal__container" data-target="modal-request">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          </button>
+          <div class="modal__legend">Заголовок формы</div>
+          <form class="form" action="/local/action/modal-review.php" data-need-validation data-sucess="modal-sucess" data-error="modal-error">
+            <div class="input js-validation-wrapper">
+              <input class="input__element" tyle="text" placeholder="Ваше имя" required>
+              <div class="input__placeholder">Ваше имя</div>
+            </div>
+            <div class="input js-validation-wrapper">
+              <input class="input__element js-phone-mask" tyle="text" placeholder="Телефон" required>
+              <div class="input__placeholder">Телефон</div>
+            </div>
+            <div class="form__row">
+              <button class="button form__row-btn">Перезвонить мне</button>
+              <div class="form__row-text">Нажимая кнопку «Перезвонить мне», вы подтверждаете, что согласны на обработку<a href="/">персональных данных</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal__container modal__container--sucess" data-target="modal-sucess">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          </button>
+          <div class="modal__legend">Данные отправлены</div>
+          <div class="modal__desc">Ваши данные успешно отправлены. Мы свяжемся с вами в самое ближайшее время.</div>
+          <button class="button">Хорошо</button>
+        </div>
+      </div>
+      <div class="modal__container modal__container--error" data-target="modal-error">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          </button>
+          <div class="modal__legend">Ошибка</div>
+          <div class="modal__desc">Ваши данные не были отправлены. Попробуйте сделать это снова или повторите позже.</div>
+          <button class="button">Повторить</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="assets/js/main.js?v=0.0.0.0"></script>
+  <script src="assets/js/backend.js?v=0.0.0.0"></script>
+</html>
