@@ -41,7 +41,7 @@
       </div>
     </div>
   </head>
-  <body class="page-home">
+  <body class="page-home js-animation-appearance">
     <div class="page-wrapper">
 
       <header class="header">
@@ -93,9 +93,11 @@
           </picture>
           <div class="site-container">
             <div class="intro__inner">
-              <h1 class="intro__title">Банковская гарантия за 4&nbsp;часа</h1>
-              <p class="intro__desc">44/223-ФЗ, ПП-615 на обеспечение заявок на участие в тендере и на обеспечение обязательств по государственному контракту</p>
-              <a class="intro__btn button" href="/">Оформить гарантию</a>
+              <div class="intro__box">
+                <h1 class="intro__title">Банковская гарантия за 4&nbsp;часа</h1>
+                <p class="intro__desc">44/223-ФЗ, ПП-615 на обеспечение заявок на участие в тендере и на обеспечение обязательств по государственному контракту</p>
+                <a class="intro__btn button" href="/">Оформить гарантию</a>
+              </div>
               <ul class="intro__items">
                 <li class="intro__item">
                   <div class="intro__item-price">До 20 млн. ₽</div>
@@ -115,113 +117,116 @@
         </section>
         <section class="guarantees">
           <div class="site-container">
-            <div class="guarantees__wrapper"></div>
-            <h2 class="guarantees__title title">Все виды банковских гарантий</h2>
-            <ul class="guarantees__list" data-quantity="4">
-              <li class="guarantees__list-item">
-                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-1.svg" alt="">
-                <div class="guarantees__list-item-box">
-                  <h3 class="guarantees__list-item-title">Гарантия для участия в тендере</h3>
-                  <p class="guarantees__list-item-desc">Обеспечивает обязательства участника тендера, конкурса или аукциона</p>
-                </div>
-              </li>
-              <li class="guarantees__list-item">
-                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-2.svg" alt="">
-                <div class="guarantees__list-item-box">
-                  <h3 class="guarantees__list-item-title">Гарантия исполнения обязательств по договору</h3>
-                  <p class="guarantees__list-item-desc">Обеспечивает исполнение обязательств по заключаемому договору</p>
-                </div>
-              </li>
-              <li class="guarantees__list-item">
-                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-3.svg" alt="">
-                <div class="guarantees__list-item-box">
-                  <h3 class="guarantees__list-item-title">Гарантия возврата авансового платежа</h3>
-                  <p class="guarantees__list-item-desc">Обеспечивает исполнение обязательств по возврату аванса по договору</p>
-                </div>
-              </li>
-              <li class="guarantees__list-item">
-                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
-                <div class="guarantees__list-item-box">
-                  <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
-                  <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
-                </div>
-              </li>
-              <li class="guarantees__list-item">
-                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
-                <div class="guarantees__list-item-box">
-                  <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
-                  <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
-                </div>
-              </li>
-              <li class="guarantees__list-item">
-                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-3.svg" alt="">
-                <div class="guarantees__list-item-box">
-                  <h3 class="guarantees__list-item-title">Гарантия возврата авансового платежа</h3>
-                  <p class="guarantees__list-item-desc">Обеспечивает исполнение обязательств по возврату аванса по договору</p>
-                </div>
-              </li>
-              <li class="guarantees__list-item">
-                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
-                <div class="guarantees__list-item-box">
-                  <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
-                  <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
-                </div>
-              </li>
-              <li class="guarantees__list-item">
-                <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
-                <div class="guarantees__list-item-box">
-                  <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
-                  <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
-                </div>
-              </li>
-            </ul>
-            <div class="guarantees__btn"><span>показать еще</span><span>скрыть</span>
-              <svg class="icon icon-arrow-down" width="20px" height="20px">
-                <use xlink:href="assets/images/sprites/sprite-multi.svg#arrow-down"></use>
-              </svg>
+            <div class="guarantees__wrapper">
+              <h2 class="guarantees__title title">Все виды банковских гарантий</h2>
+              <ul class="guarantees__list" data-quantity="4">
+                <li class="guarantees__list-item">
+                  <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-1.svg" alt="">
+                  <div class="guarantees__list-item-box">
+                    <h3 class="guarantees__list-item-title">Гарантия для участия в тендере</h3>
+                    <p class="guarantees__list-item-desc">Обеспечивает обязательства участника тендера, конкурса или аукциона</p>
+                  </div>
+                </li>
+                <li class="guarantees__list-item">
+                  <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-2.svg" alt="">
+                  <div class="guarantees__list-item-box">
+                    <h3 class="guarantees__list-item-title">Гарантия исполнения обязательств по договору</h3>
+                    <p class="guarantees__list-item-desc">Обеспечивает исполнение обязательств по заключаемому договору</p>
+                  </div>
+                </li>
+                <li class="guarantees__list-item">
+                  <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-3.svg" alt="">
+                  <div class="guarantees__list-item-box">
+                    <h3 class="guarantees__list-item-title">Гарантия возврата авансового платежа</h3>
+                    <p class="guarantees__list-item-desc">Обеспечивает исполнение обязательств по возврату аванса по договору</p>
+                  </div>
+                </li>
+                <li class="guarantees__list-item">
+                  <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
+                  <div class="guarantees__list-item-box">
+                    <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
+                    <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
+                  </div>
+                </li>
+                <li class="guarantees__list-item">
+                  <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
+                  <div class="guarantees__list-item-box">
+                    <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
+                    <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
+                  </div>
+                </li>
+                <li class="guarantees__list-item">
+                  <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-3.svg" alt="">
+                  <div class="guarantees__list-item-box">
+                    <h3 class="guarantees__list-item-title">Гарантия возврата авансового платежа</h3>
+                    <p class="guarantees__list-item-desc">Обеспечивает исполнение обязательств по возврату аванса по договору</p>
+                  </div>
+                </li>
+                <li class="guarantees__list-item">
+                  <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
+                  <div class="guarantees__list-item-box">
+                    <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
+                    <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
+                  </div>
+                </li>
+                <li class="guarantees__list-item">
+                  <img class="guarantees__list-item-icon" src="assets/images/guarantees/icon-4.svg" alt="">
+                  <div class="guarantees__list-item-box">
+                    <h3 class="guarantees__list-item-title">Гарантия на гарантийные обязательства</h3>
+                    <p class="guarantees__list-item-desc">Обеспечивает исполнение гарантийных обязательств по заключаемому договору</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="guarantees__btn"><span>показать еще</span><span>скрыть</span>
+                <svg class="icon icon-arrow-down" width="20px" height="20px">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#arrow-down"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </section>
         <section class="decor">
           <div class="site-container">
-            <h2 class="decor__title title">Удобное оформление</h2>
-            <div class="decor__swiper-wrapper">
-              <div class="decor__swiper">
-                <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
-                    <img class="decor__item-icon" src="assets/images/decor/icon-1.svg" alt="">
-                    <div class="decor__item-box">
-                      <h3 class="decor__item-title">Без визита в банк</h3>
-                      <p class="decor__item-desc">Все оформляется через наш сервис</p>
+            <div class="decor__wrapper">
+              <h2 class="decor__title title">Удобное оформление</h2>
+              <div class="decor__swiper-wrapper">
+                <div class="decor__swiper">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="decor__item-icon" src="assets/images/decor/icon-1.svg" alt="">
+                      <div class="decor__item-box">
+                        <h3 class="decor__item-title">Без визита в банк</h3>
+                        <p class="decor__item-desc">Все оформляется через наш сервис</p>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="decor__item-icon" src="assets/images/decor/icon-2.svg" alt="">
+                      <div class="decor__item-box">
+                        <h3 class="decor__item-title">Без залога и поручительства</h3>
+                        <p class="decor__item-desc">Не требуется предоставление поручительств и залогов</p>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="decor__item-icon" src="assets/images/decor/icon-3.svg" alt="">
+                      <div class="decor__item-box">
+                        <h3 class="decor__item-title">Без открытия расчетного счета</h3>
+                        <p class="decor__item-desc">Ответ от банков-партнеров — в течение 30 минут</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="decor__swiper-navigation">
+                    <div class="decor__swiper-navigation-prev">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#FAFAFA" />
+                        <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black" />
+                      </svg>
                     </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <img class="decor__item-icon" src="assets/images/decor/icon-2.svg" alt="">
-                    <div class="decor__item-box">
-                      <h3 class="decor__item-title">Без залога и поручительства</h3>
-                      <p class="decor__item-desc">Не требуется предоставление поручительств и залогов</p>
+                    <div class="decor__swiper-navigation-next">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#FAFAFA" />
+                        <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black" />
+                      </svg>
                     </div>
-                  </li>
-                  <li class="swiper-slide">
-                    <img class="decor__item-icon" src="assets/images/decor/icon-3.svg" alt="">
-                    <div class="decor__item-box">
-                      <h3 class="decor__item-title">Без открытия расчетного счета</h3>
-                      <p class="decor__item-desc">Ответ от банков-партнеров — в течение 30 минут</p>
-                    </div>
-                  </li>
-                </ul>
-                <div class="decor__swiper-navigation">
-                  <div class="decor__swiper-navigation-prev">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="40" height="40" rx="20" fill="#FAFAFA" />
-                      <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black" />
-                    </svg>
-                  </div>
-                  <div class="decor__swiper-navigation-next">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect width="40" height="40" rx="20" fill="#FAFAFA" />
-                      <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black" />
-                    </svg>
                   </div>
                 </div>
               </div>
@@ -230,33 +235,35 @@
         </section>
         <section class="stages">
           <div class="site-container">
-            <h2 class="stages__title title">Как подать заявку на банковскую гарантию</h2>
-            <ul class="stages__list">
-              <li class="stages__list-item" style="--r:180deg;">
-                <div class="stage">
-                  <div class="stage__num">
-                    <div class="stage__num-circle"></div>
+            <div class="stages__wrapper">
+              <h2 class="stages__title title">Как подать заявку на банковскую гарантию</h2>
+              <ul class="stages__list">
+                <li class="stages__list-item" style="--r:180deg;">
+                  <div class="stage">
+                    <div class="stage__num">
+                      <div class="stage__num-circle"></div>
+                    </div>
+                    <div class="stage__text">Чтобы оформить заявку<a href="#">войдите</a>\<a href="#">зарегистрируйтесь</a>в нашем сервисе</div>
                   </div>
-                  <div class="stage__text">Чтобы оформить заявку<a href="#">войдите</a>\<a href="#">зарегистрируйтесь</a>в нашем сервисе</div>
-                </div>
-              </li>
-              <li class="stages__list-item" style="--r:270deg;">
-                <div class="stage">
-                  <div class="stage__num">
-                    <div class="stage__num-circle"></div>
+                </li>
+                <li class="stages__list-item" style="--r:270deg;">
+                  <div class="stage">
+                    <div class="stage__num">
+                      <div class="stage__num-circle"></div>
+                    </div>
+                    <div class="stage__text">Создайте заявку в личном кабинете</div>
                   </div>
-                  <div class="stage__text">Создайте заявку в личном кабинете</div>
-                </div>
-              </li>
-              <li class="stages__list-item" style="--r:360deg;">
-                <div class="stage">
-                  <div class="stage__num">
-                    <div class="stage__num-circle"></div>
+                </li>
+                <li class="stages__list-item" style="--r:360deg;">
+                  <div class="stage">
+                    <div class="stage__num">
+                      <div class="stage__num-circle"></div>
+                    </div>
+                    <div class="stage__text">Отслеживайте статус заявки в личном кабинете.</div>
                   </div>
-                  <div class="stage__text">Отслеживайте статус заявки в личном кабинете.</div>
-                </div>
-              </li>
-            </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
         <section class="review">
