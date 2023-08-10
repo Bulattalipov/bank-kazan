@@ -430,6 +430,7 @@ export default function validation() {
       const formData = new FormData(form);
       const url = form.getAttribute('action');
       const successModal = form.dataset.sucess;
+      const errorModal = form.dataset.error;
 
       if ($(form).parsley().isValid()) {
         console.log(successModal);
@@ -446,7 +447,7 @@ export default function validation() {
           .catch((error) => {
             console.log(error.message);
             window.bank_kazan_API.modal.close();
-            window.bank_kazan_API.modal.onOpen('modal-error');
+            window.bank_kazan_API.modal.onOpen(errorModal);
           });
       }
     });

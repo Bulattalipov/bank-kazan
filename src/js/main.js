@@ -9,6 +9,9 @@ import SwiperDecor from './modules/SwiperDecor';
 import Accordions from './modules/Accordions';
 import phoneMask from './modules/inputMask';
 import validation from './modules/validation';
+import fancyboxFunc from './modules/fancybox-func';
+import loadingPageAnimations from './modules/loadingPageAnimations';
+import smoothScroll from './modules/smoothScroll';
 
 documenReady(() => {
   window.bank_kazan_API = {};
@@ -21,6 +24,9 @@ documenReady(() => {
   accordion();
   phoneMask();
   validation();
+  fancyboxFunc();
+  loadingPageAnimations();
+  smoothScroll();
 });
 
 function accordion() {

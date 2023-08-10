@@ -7,24 +7,25 @@
 
 section.decor
   .site-container
-    h2.decor__title.title Удобное оформление
-    .decor__swiper-wrapper
-      .decor__swiper
-        ul.swiper-wrapper
-          each item in decorList
-            li.swiper-slide
-              img.decor__item-icon(src=`assets/images/decor/${item.iconName}.svg` alt="")
-              .decor__item-box
-                h3.decor__item-title= item.title
-                p.decor__item-desc= item.desc
-        .decor__swiper-navigation
-          .decor__swiper-navigation-prev
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="40" height="40" rx="20" fill="#FAFAFA"/>
-              <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black"/>
-            </svg>
-          .decor__swiper-navigation-next
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="40" height="40" rx="20" fill="#FAFAFA"/>
-              <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black"/>
-            </svg>
+    .decor__wrapper
+      h2.decor__title.title Удобное оформление
+      .decor__swiper-wrapper
+        .decor__swiper
+          ul.swiper-wrapper
+            each item in decorList
+              li.swiper-slide
+                img.decor__item-icon(src=`assets/images/decor/${item.iconName}.svg` alt="")
+                .decor__item-box
+                  h3.decor__item-title= item.title
+                  p.decor__item-desc= item.desc
+          .decor__swiper-navigation
+            .decor__swiper-navigation-prev
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#FAFAFA"/>
+                <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black"/>
+              </svg>
+            .decor__swiper-navigation-next
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="20" fill="#FAFAFA"/>
+                <path class="ic-1" d="M26 21C26.5523 21 27 20.5523 27 20C27 19.4477 26.5523 19 26 19V21ZM13.2929 19.2929C12.9024 19.6834 12.9024 20.3166 13.2929 20.7071L19.6569 27.0711C20.0474 27.4616 20.6805 27.4616 21.0711 27.0711C21.4616 26.6805 21.4616 26.0474 21.0711 25.6569L15.4142 20L21.0711 14.3431C21.4616 13.9526 21.4616 13.3195 21.0711 12.9289C20.6805 12.5384 20.0474 12.5384 19.6569 12.9289L13.2929 19.2929ZM26 19L14 19L14 21L26 21V19Z" fill="black"/>
+              </svg>

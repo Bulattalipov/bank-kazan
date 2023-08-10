@@ -6,23 +6,23 @@ header.header
       nav.nav.header__nav
         ul.nav__list
           li.nav__item
-            a.nav__item-link(href="/")
+            a.nav__item-link(class="yakor" href="#guarantees")
               | Виды гарантий
           li.nav__item
-            a.nav__item-link(href="/")
+            a.nav__item-link(class="yakor" href="#stages")
               | Как подать заявку
           li.nav__item
-            a.nav__item-link(href="/")
+            a.nav__item-link(class="yakor" href="#faq")
               | Вопросы и ответы
       .header__box
         a.header__telephone(href="tel:88007751877")
           +icon-mono("phone")(class="header__telephone-icon" width="14px" height="15px")
           .header__telephone-number 8-800-77-518-77
-        button.header__cabinet-btn.button(data-path="modal-sucess") личный кабинет
+        a.header__cabinet-btn.button(href="/") личный кабинет
       .header__mobile
         .header__mobile-burger
           span
           span
           span
-        button.header__mobile-cabinet(data-path="modal-sucess")
+        a.header__mobile-cabinet(href="/")
           +icon-mono("cabinet")(width="32px" height="32px")

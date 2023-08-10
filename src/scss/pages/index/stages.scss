@@ -1,9 +1,22 @@
 .stages {
   padding-top: 12rem;
 
+  @include mq(md) {
+    padding-top: 9rem;
+  }
+
+  @include mq(xs) {
+    padding-top: 4.8rem;
+  }
+
   &__title {
     margin-bottom: 6rem;
     text-align: center;
+
+    @include mq(sm) {
+      margin-bottom: 3.7rem;
+      text-align: start;
+    }
   }
 
   &__list {
@@ -13,11 +26,76 @@
 
     @include mq(sm) {
       grid-template-columns: repeat(1, 1fr);
+      gap: 0;
     }
   }
 
   &__list-item {
+    position: relative;
     counter-increment: list;
+
+    &::before {
+      position: absolute;
+      top: 6.8rem;
+      left: 70%;
+      width: 28rem;
+      border-top: 0.3rem dashed #D2D2D2;
+      height: 0.1rem;
+      content: '';
+
+      @include mq(custom, max, 1530) {
+        left: 73%;
+      }
+
+      @include mq(custom, max, 1300) {
+        left: 71%;
+      }
+
+      @include mq(custom, max, 1200) {
+        left: 73%;
+        width: 25rem;
+      }
+
+      @include mq(custom, max, 1100) {
+        left: 70%;
+      }
+
+      @include mq(custom, max, 1050) {
+        left: 73%;
+        width: 22rem;
+      }
+
+      @include mq(md) {
+        top: 5rem;
+        width: 20rem;
+      }
+
+      @include mq(custom, max, 850) {
+        width: 18rem;
+      }
+
+      @include mq(sm) {
+        top: auto;
+        bottom: 1.4rem;
+        left: 2.8rem;
+        width: 1.6rem;
+        border-top: 0.2rem dashed #D2D2D2;
+        transform: rotate(90deg);
+      }
+
+      @include mq(xs) {
+        bottom: 1.2rem;
+        left: 2.6rem;
+        border-top: 0.1rem dashed #D2D2D2;
+        width: 1.2rem;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
   }
 }
 
@@ -26,6 +104,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @include mq(sm) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  @include mq(xs) {
+    margin-bottom: 2.4rem;
+  }
 
   &__num {
     position: relative;
@@ -36,6 +124,24 @@
     width: 14rem;
     height: 14rem;
     margin-bottom: 3rem;
+    flex-shrink: 0;
+
+    @include mq(md) {
+      width: 10rem;
+      height: 10rem;
+      margin-bottom: 2rem;
+    }
+
+    @include mq(sm) {
+      width: 7.5rem;
+      height: 7.5rem;
+      margin-bottom: 0;
+    }
+
+    @include mq(xs) {
+      width: 6.4rem;
+      height: 6.4rem;
+    }
 
     &::before {
       position: relative;
@@ -52,6 +158,23 @@
       background-color: #FAFAFA;
       border-radius: 50%;
       content: counter(list);
+
+      @include mq(md) {
+        width: 9.8rem;
+        height: 9.8rem;
+        font-size: 4rem;
+      }
+
+      @include mq(sm) {
+        width: 7.2rem;
+        height: 7.2rem;
+        font-size: 2.8rem;
+      }
+
+      @include mq(xs) {
+        width: 6.2rem;
+        height: 6.2rem;
+      }
     }
   }
 
@@ -83,6 +206,10 @@
       background: conic-gradient(#99C536 var(--r), #fff 0deg);
       background-color: transparent;
       transition: all var(--transition);
+
+      @include mq(sm) {
+        background: conic-gradient(#99C536 360deg, #fff 0deg);
+      }
     }
 
     &::after {
@@ -99,7 +226,22 @@
     font-size: 2rem;
     text-align: center;
 
+    @include mq(md) {
+      font-size: 1.8rem;
+    }
+
+    @include mq(sm) {
+      margin-left: 2.6rem;
+      font-size: 1.6rem;
+      text-align: start;
+    }
+
+    @include mq(xs) {
+      font-size: 1.4rem;
+    }
+
     a {
+      display: inline-block;
       color: #531A62;
       text-decoration-line: underline;
     }

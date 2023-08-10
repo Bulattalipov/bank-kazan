@@ -36,6 +36,20 @@ body {
   color: var(--color-dark);
   font: var(--font-body);
   background-color: var(--color-bg);
+
+  &.js-animation-appearance {
+    .header {
+      opacity: 0;
+    }
+
+    .intro__box {
+      opacity: 0;
+    }
+
+    .intro__items {
+      opacity: 0;
+    }
+  }
 }
 
 ul,

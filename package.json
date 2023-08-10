@@ -87,11 +87,13 @@
 		"vinyl-source-stream": "^2.0.0"
 	},
 	"dependencies": {
+		"@fancyapps/ui": "github:fancyapps/ui",
 		"dayjs": "1.11.9",
 		"gsap": "3.12.2",
 		"inputmask": "5.0.8",
 		"jquery": "3.7.0",
 		"parsleyjs": "2.9.2",
+		"plyr": "3.7.8",
 		"reset-css": "^5.0.1",
 		"swiper": "8.4.4",
 		"vanilla-lazyload": "^17.6.1"

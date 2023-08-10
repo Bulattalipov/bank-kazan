@@ -10,18 +10,18 @@
     {iconName: "icon-4", title: "Гарантия на гарантийные обязательства", desc: "Обеспечивает исполнение гарантийных обязательств по заключаемому договору"},
   ]
 
-section.guarantees
+section.guarantees(id="guarantees")
   .site-container
     .guarantees__wrapper
-    h2.guarantees__title.title Все виды банковских гарантий
-    ul.guarantees__list(data-quantity="4")
-      each item in guaranteesList
-        li.guarantees__list-item
-          img.guarantees__list-item-icon(src=`assets/images/guarantees/${item.iconName}.svg` alt="")
-          .guarantees__list-item-box
-            h3.guarantees__list-item-title= item.title
-            p.guarantees__list-item-desc= item.desc
-    .guarantees__btn
-      span показать еще
-      span скрыть
-      +icon-multi("arrow-down")(width="20px" height="20px")
+      h2.guarantees__title.title Все виды банковских гарантий
+      ul.guarantees__list(data-quantity="4")
+        each item in guaranteesList
+          li.guarantees__list-item
+            img.guarantees__list-item-icon(src=`assets/images/guarantees/${item.iconName}.svg` alt="")
+            .guarantees__list-item-box
+              h3.guarantees__list-item-title= item.title
+              p.guarantees__list-item-desc= item.desc
+      .guarantees__btn
+        span показать еще
+        span скрыть
+        +icon-multi("arrow-down")(width="20px" height="20px")
