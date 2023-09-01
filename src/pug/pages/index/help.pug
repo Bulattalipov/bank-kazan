@@ -14,4 +14,7 @@ section.help
             .input__placeholder Телефон
           .form__row
             button.button.form__row-btn Перезвонить мне
-            .form__row-text Нажимая кнопку «Перезвонить мне», вы подтверждаете, что согласны на обработку #[a(href="/") персональных данных]
+            .checkbox
+              input(type="checkbox" class="visually-hidden" id="checkbox-1" required)
+              label(for="checkbox-1" class="checkbox__container")
+                span.checkbox__control Отправляя заявку, я соглашаюсь на обработку персональных данных

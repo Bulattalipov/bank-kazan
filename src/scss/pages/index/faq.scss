@@ -122,6 +122,15 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &--doc {
+      color: #531A62;
+      text-decoration-line: underline;
+
+      &::before {
+        background-image: url('../images/faq/file.svg');
+      }
+    }
   }
 
   &__list-item-content-elem-title {

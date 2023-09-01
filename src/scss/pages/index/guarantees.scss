@@ -108,6 +108,7 @@
     justify-content: center;
     margin-top: 1.2rem;
     padding: 2.35rem;
+    font-family: var(--second-ff);
     background: #FAFAFA;
     border-radius: 2rem;
     text-transform: uppercase;
@@ -129,6 +130,8 @@
     }
 
     span {
+      font-weight: 600;
+
       &:nth-child(2) {
         display: none;
       }

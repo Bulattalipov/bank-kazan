@@ -59,7 +59,7 @@
     }
 
     @include mq(xs) {
-      top: -9rem;
+      top: -11rem;
       right: 50%;
       transform: translateX(50%);
     }
@@ -70,6 +70,7 @@
     max-width: 43rem;
     margin-bottom: 2.4rem;
     color: #fff;
+    font-weight: 600;
     font-size: 4rem;
     z-index: 1;
 
@@ -107,7 +108,11 @@
     padding: 7.2rem 5.7rem 7.2rem 4rem;
     background: #F1F1F1;
     border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -webkit-border-radius: 4rem;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
 
     @include mq(md) {
       margin-top: 2rem;
@@ -118,6 +123,8 @@
       min-height: 22rem;
       padding: 2rem;
       border-radius: 2rem;
+      -moz-border-radius: 2rem;
+      -webkit-border-radius: 2rem;
     }
 
     video {
@@ -126,12 +133,21 @@
       left: -56rem;
       z-index: 0;
       height: 94rem;
+      border-radius: 4rem;
+      -moz-border-radius: 4rem;
+      -webkit-border-radius: 4rem;
 
       @include mq(md) {
         height: 65rem;
         top: -22rem;
         left: 50%;
         transform: translateX(-50%);
+      }
+
+      @include mq(sm) {
+        border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -webkit-border-radius: 2rem;
       }
 
       @include mq(xs) {

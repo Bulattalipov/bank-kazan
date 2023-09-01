@@ -8,6 +8,7 @@
   z-index: -1;
   background-color: #94C22B;
   transition: opacity var(--transition), z-index var(--transition);
+  overflow-y: auto;
 
   &.active {
     opacity: 1;

@@ -432,6 +432,8 @@ export default function validation() {
       const successModal = form.dataset.sucess;
       const errorModal = form.dataset.error;
 
+      console.log(formData);
+
       if ($(form).parsley().isValid()) {
         console.log(successModal);
 

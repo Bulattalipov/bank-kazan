@@ -109,22 +109,9 @@
     margin-right: 2.7rem;
 
     @include mq(xs) {
+      order: 1;
       margin-right: 0;
-      margin-bottom: 1.2rem;
-    }
-  }
-
-  &__row-text {
-    color: rgba(0, 0, 0, 0.30);
-    font-size: 1.2rem;
-
-    @include mq(xs) {
-      font-size: 1rem;
-    }
-
-    a {
-      color: #531A62;
-      text-decoration-line: underline;
+      margin-top: 2.2rem;
     }
   }
 
